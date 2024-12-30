@@ -1,0 +1,17 @@
+@import "react-toastify/dist/ReactToastify.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-textPrimary font-sans;
+}
+
+input {
+  @apply border rounded-lg px-4 py-2 w-full mt-2 focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+button {
+  @apply bg-primary text-white rounded-lg px-4 py-2 mt-4 hover:bg-secondary transition-all;
+}
