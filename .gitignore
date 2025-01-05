@@ -90,3 +90,7 @@ ENV/
 
 # Models
 Llama-3.2-1B-Instruct/
+
+# NPM
+node_modules/
+package-lock.json

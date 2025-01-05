@@ -1,3 +1,59 @@
 {
-    
-}
+    "collections": {
+      "users": {
+        "description": "Almacena la información de los usuarios registrados.",
+        "fields": {
+          "_id": {
+            "type": "ObjectId",
+            "description": "Identificador único del usuario."
+          },
+          "username": {
+            "type": "String",
+            "required": true,
+            "unique": true,
+            "description": "Nombre de usuario único."
+          },
+          "password": {
+            "type": "String",
+            "required": true,
+            "description": "Contraseña cifrada del usuario."
+          },
+          "created_at": {
+            "type": "Date",
+            "default": "CURRENT_TIMESTAMP",
+            "description": "Fecha de registro del usuario."
+          }
+        }
+      },
+      "chats": {
+        "description": "Almacena los historiales de conversación de los usuarios.",
+        "fields": {
+          "_id": {
+            "type": "ObjectId",
+            "description": "Identificador único del historial de conversación."
+          },
+          "user_id": {
+            "type": "ObjectId",
+            "required": true,
+            "ref": "users",
+            "description": "Referencia al usuario que realizó la conversación."
+          },
+          "user_message": {
+            "type": "String",
+            "required": true,
+            "description": "Mensaje enviado por el usuario."
+          },
+          "bot_response": {
+            "type": "String",
+            "required": true,
+            "description": "Respuesta generada por el chatbot."
+          },
+          "timestamp": {
+            "type": "Date",
+            "default": "CURRENT_TIMESTAMP",
+            "description": "Fecha y hora del mensaje."
+          }
+        }
+      }
+    }
+  }

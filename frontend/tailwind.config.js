@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#4F46E5',      // Color principal (morado)
-        secondary: '#22C55E',    // Color secundario (verde)
-        background: '#F9FAFB',   // Fondo claro (corregido el typo)
-        textPrimary: '#1F2937',  // Texto principal oscuro
+        primary: '#4B5563',      // Color principal (morado)
+        secondary: '#D1D5DB',    // Color secundario (verde)
+        background: '#FFFFFF',   // Fondo claro (corregido el typo)
+        textPrimary: '#111827',  // Texto principal oscuro
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',        // Entrada suave
